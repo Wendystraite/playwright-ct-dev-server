@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "ct-dev-server",
+    "configs",
+    "fixtures",
+    "playwright",
+    "tests",
+    "utils",
+    "ct-preview-server/vite-config-ct-preview.ts"
+  ]
+}

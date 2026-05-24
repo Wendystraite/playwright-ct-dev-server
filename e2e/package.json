@@ -1,0 +1,26 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:dev": "playwright test -c configs/dev/playwright.config.ts",
+    "test:preview": "playwright test -c configs/preview/playwright.config.ts",
+    "ct:dev-server": "vite --config ct-dev-server/vite-config-ct-dev.ts",
+    "report": "playwright show-report ../../playwright-report",
+    "playwright:install": "playwright install --with-deps chromium"
+  },
+  "devDependencies": {
+    "@playwright/experimental-ct-react": "1.60.0",
+    "@playwright/test": "1.60.0",
+    "@types/node": "25.9.1",
+    "@types/react": "19.2.15",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "playwright": "1.60.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "typescript": "6.0.3",
+    "vite": "8.0.14"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  // Environment variables injected by the Playwright VS Code extension when running tests.
+  "playwright.env": {
+    // Uncomment the entry below to enable app-level VS Code breakpoints during test runs.
+    // "PW_REMOTE_DEBUGGING_PORT": "9222",
+    // Optional: increase or decrease the wait time before opening the app in the browser.
+    // "PW_REMOTE_DEBUGGING_WAIT_TIME_MS": "1500",
+  }
+}

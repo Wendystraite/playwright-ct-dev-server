@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // Debug app/component source code with VS Code breakpoints.
+    // Prerequisites: CT dev server must be running (pnpm ct:dev-server).
+    // Change the `url` query params to open the story you want to debug.
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug CT Dev Server (Chrome)",
+      "url": "http://localhost:3200/ct-dev-server/?story=counter.story.tsx&name=CounterStory",
+      "webRoot": "${workspaceFolder}/app",
+      "sourceMapPathOverrides": {
+        "/@fs/*": "/*"
+      }
+    },
+    // Attach to the Chrome instance opened by the Playwright VS Code extension (headed mode).
+    // Lets you set VS Code breakpoints in app code while a Playwright test is running.
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Attach to Playwright browser",
+      "port": 9222,
+      "urlFilter": "http://localhost:3200/*",
+      "webRoot": "${workspaceFolder}/app",
+      "sourceMapPathOverrides": {
+        "/@fs/*": "/*"
+      },
+      "timeout": 60000
+    }
+  ]
+}

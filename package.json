@@ -1,0 +1,18 @@
+{
+  "name": "playwright-ct-dev-server-example",
+  "private": true,
+  "scripts": {
+    "app:dev": "pnpm -F app dev",
+    "app:build": "pnpm -F app build",
+    "app:preview": "pnpm -F app preview",
+    "ct:dev-server": "pnpm -F e2e ct:dev-server",
+    "test:dev": "pnpm -F e2e test:dev",
+    "test:preview": "pnpm -F e2e test:preview",
+    "report": "pnpm -F e2e report",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "3.8.3"
+  }
+}
